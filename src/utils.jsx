@@ -1,12 +1,11 @@
-export  const navLinks = [
-      { name: 'Home', href: '#home' },
-      { name: 'Skills', href: '#skills' },
-      { name: 'Experience', href: '#experience' },
-      { name: 'Projects', href: '#projects' },
-      { name: 'Education', href: '#education' },
-      { name: 'Certifications', href: '#certifications' },
-  ];
-
+export const navLinks = [
+  { name: "Home", href: "#home" },
+  { name: "Skills", href: "#skills" },
+  { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
+  { name: "Education", href: "#education" },
+  { name: "Certifications", href: "#certifications" },
+];
 
 export const resumeData = {
   name: "Yash Prakash Pimpalkar",
@@ -67,15 +66,21 @@ export const resumeData = {
       date: "07/2024-02/2025",
       description:
         "Developed a comprehensive Outcome-Based Education (OBE) software solution to help educational institutions define, track, and assess educational goals. The system analyzes student progress in detail and provides actionable insights to improve overall learning outcomes.",
-      link: "#", // Placeholder link
+      github: "https://github.com/YashPimpalkar/maplms-25",
+      live: "https://github.com/YashPimpalkar/maplms-25",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS","Django", "Python","SQLlite"],
     },
     {
       title: "Fitness App",
+      date: "",
       description:
         "Engineered a dynamic web application using React.js and Rapid API to display animated workout routines. Focused on creating a responsive and engaging user interface to guide users through various fitness exercises.",
-      link: "#", // Placeholder link
+      github: "https://github.com/YashPimpalkar/fitness-advance",
+      live: "https://fitness-club-silk.netlify.app/",
+      technologies: ["React", "Rapid API", "Material UI", "Firebase"]
     },
   ],
+
   education: [
     {
       degree: "Computer Engineering",
@@ -92,7 +97,7 @@ export const resumeData = {
       percentage: "90.75%",
       date: "2019-2022",
     },
-        {
+    {
       degree: "SSC",
       school: "D. S. High School",
       link: "#", // Placeholder link
@@ -192,13 +197,39 @@ export const PhoneIcon = () => (
   </svg>
 );
 
-
 export const MenuIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-  );
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-menu"
+  >
+    <line x1="4" x2="20" y1="12" y2="12" />
+    <line x1="4" x2="20" y1="6" y2="6" />
+    <line x1="4" x2="20" y1="18" y2="18" />
+  </svg>
+);
 
 export const CloseIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-  );
-
-
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-x"
+  >
+    <path d="M18 6 6 18" />
+    <path d="m6 6 12 12" />
+  </svg>
+);
