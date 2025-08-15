@@ -56,9 +56,9 @@ export const resumeData = {
       "GSAP",
       "Framer Motion",
     ],
-    Backend: ["Node.js", "Python", "Java", "C/C++"],
+    Backend: ["Node.js", "Python", "Java", "C/C++", "Express", "Django"],
     Databases: ["MySQL", "MongoDB"],
-    "Tools & Platforms": ["Git", "GitHub", "Jira", "Zeplin", "AWS", "DevOps"],
+    "Tools & Platforms": ["Git", "GitHub", "Jira", "Zeplin", "AWS", "DevOps","VS Code","Android Studio"],
   },
   projects: [
     {
@@ -68,7 +68,16 @@ export const resumeData = {
         "Developed a comprehensive Outcome-Based Education (OBE) software solution to help educational institutions define, track, and assess educational goals. The system analyzes student progress in detail and provides actionable insights to improve overall learning outcomes.",
       github: "https://github.com/YashPimpalkar/maplms-25",
       live: "https://github.com/YashPimpalkar/maplms-25",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS","Django", "Python","SQLlite"],
+      technologies: [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "Tailwind CSS",
+        "Django",
+        "Python",
+        "SQLlite",
+      ],
     },
     {
       title: "Fitness App",
@@ -77,7 +86,61 @@ export const resumeData = {
         "Engineered a dynamic web application using React.js and Rapid API to display animated workout routines. Focused on creating a responsive and engaging user interface to guide users through various fitness exercises.",
       github: "https://github.com/YashPimpalkar/fitness-advance",
       live: "https://fitness-club-silk.netlify.app/",
-      technologies: ["React", "Rapid API", "Material UI", "Firebase"]
+      technologies: ["React", "Rapid API", "Material UI", "Firebase"],
+    },
+    {
+      title: "Modern Dictionary",
+      date: "",
+      description:
+        "A modern dictionary web application built with Django and web scraping. It provides meanings, synonyms, antonyms, and usage examples for searched words. Features include a chatbot, JavaScript games, blog section, and Google Translate integration.",
+      github: "https://github.com/YashPimpalkar/ModernDictionary",
+      live: "https://moderndictionary.vercel.app/",
+      technologies: [
+        "Django",
+        "Python",
+        "BeautifulSoup",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Material UI",
+        "Google Translate API",
+      ],
+    },
+    {
+      title: "MentorMentee Management System",
+      date: "",
+      description:
+        "A web platform where HOD assigns mentors and mentees. Mentors can track and manage their assigned mentees, while mentees can fill out personal and academic forms, and upload resumes and result documents for streamlined academic mentoring.",
+      github: "https://github.com/YashPimpalkar/mentormentee",
+      live: "",
+      technologies: ["React", "Node.js", "Tailwind CSS", "JavaScript"],
+    },
+    {
+      title: "Perficio Company Website",
+      date: "",
+      description:
+        "A basic company website built using Next.js and TypeScript with support for user and admin roles. Features include blog management, OAuth authentication, PDF uploads, and Cloudinary integration for image storage.",
+      github: "https://github.com/Yash-Pimpalkar/perificio.auth",
+      live: "https://perficio.vercel.app/",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "OAuth",
+        "Cloudinary",
+        "Tailwind CSS",
+        "React",
+        "Node.js",
+        "MongoDB",
+      ],
+    },
+    {
+      title: "Shanaaz Masala Website (UI Only)",
+      date: "",
+      description:
+        "A fully responsive UI design for a food products brand, built using React and Tailwind CSS. Includes homepage sections for products, about, contact, and banners tailored for a masala product website.",
+      github: "https://github.com/YashPimpalkar/shanaaz-masala",
+      live: "https://shanaaz-masala.netlify.app/",
+      technologies: ["React", "Tailwind CSS"],
     },
   ],
 
