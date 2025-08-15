@@ -61,9 +61,9 @@ function App() {
           )}
         </nav>
         {/* Main container with padding and max width */}
-        <div className="container mx-auto px-4 py-8 md:px-14 md:py-16 max-w-[1440px]">
+        <div id="home" className="container mx-auto px-4 py-8 md:px-14 md:py-16 max-w-[1440px]">
           {/* Hero Section */}
-          <header className="flex flex-col md:flex-row items-center md:items-start justify-between mb-16 space-y-4 md:space-y-0">
+          <header  className="flex flex-col md:flex-row items-center md:items-start justify-between mb-16 space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
               <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-2">
                 {resumeData.name}
@@ -105,7 +105,7 @@ function App() {
           </header>
 
           {/* Skills Section */}
-          <section className="mb-16">
+          <section id="skills" className="mb-16">
             <h3 className="text-3xl font-bold text-white mb-6">Skills</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {Object.entries(resumeData.skills).map(
@@ -134,7 +134,7 @@ function App() {
           </section>
 
           {/* Professional Experience Section */}
-          <section className="mb-16">
+          <section id="experience" className="mb-16">
             <h3 className="text-3xl font-bold text-white mb-6">Experience</h3>
             <div className="space-y-8">
               {resumeData.experience.map((exp, index) => (
@@ -169,7 +169,7 @@ function App() {
           </section>
 
           {/* Projects Section with clickable links */}
-          <section className="mb-16">
+          <section id="projects" className="mb-16">
             <h3 className="text-3xl font-bold text-white mb-6">Projects</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {resumeData.projects.map((project, index) => (
@@ -197,7 +197,7 @@ function App() {
           </section>
 
           {/* Education Section with clickable links */}
-          <section className="mb-16">
+          <section id="education" className="mb-16">
             <h3 className="text-3xl font-bold text-white mb-6">Education</h3>
             <div className="space-y-4">
               {resumeData.education.map((edu, index) => (
@@ -230,7 +230,7 @@ function App() {
           </section>
 
           {/* Certifications Section */}
-          <section className="mb-16">
+          <section id="certifications" className="mb-16">
             <h3 className="text-3xl font-bold text-white mb-6">
               Certifications
             </h3>
@@ -257,7 +257,6 @@ function App() {
           </section>
         </div>
 
-        {/* Footer */}
         {/* Footer */}
         <footer className="bg-gray-800 text-gray-400 max-w-full ">
           <div className="w-full px-4 py-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">

@@ -83,14 +83,21 @@ export const resumeData = {
         "Vasantdada Patil Pratishthan's College of Engineering and Visual Arts",
       link: "#", // Placeholder link
       cgpa: "7.57 CGPA",
-      date: "11/2022-07/2025",
+      date: "2022-2025",
     },
     {
       degree: "Diploma In Computer Engineering",
       school: "Government Polytechnic Mumbai",
       link: "#", // Placeholder link
       percentage: "90.75%",
-      date: "06/2019-07/2022",
+      date: "2019-2022",
+    },
+        {
+      degree: "SSC",
+      school: "D. S. High School",
+      link: "#", // Placeholder link
+      percentage: "82.4%",
+      date: "2018-2019",
     },
   ],
   certifications: [
