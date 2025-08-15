@@ -10,55 +10,58 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
       <div className="bg-gray-900 text-gray-200  font-inter">
-         {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-90 backdrop-blur-sm z-50 shadow-lg">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center max-w-5xl">
-           <a href="#home" className="text-xl font-extrabold text-cyan-400 transition-colors duration-300">
-            YASH
-          </a>
-          <div className="hidden md:flex space-x-6">
-            {navLinks.map((link, index) => (
-              <a 
-                key={index} 
-                href={link.href} 
-                className="text-gray-300 hover:text-cyan-400 font-medium transition-colors duration-300"
-              >
-                {link.name}
-              </a>
-            ))}
-          </div>
-          <button 
-            onClick={() => setIsMenuOpen(!isMenuOpen)} 
-            className="md:hidden text-white focus:outline-none"
-            aria-label="Toggle navigation menu"
-          >
-            {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
-          </button>
-        </div>
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden bg-gray-800 border-t border-gray-700 py-4">
-            <div className="flex flex-col items-center space-y-4">
+        {/* Navbar */}
+        <nav className="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-90 backdrop-blur-sm z-50 shadow-lg">
+          <div className="container mx-auto px-4 py-4 flex justify-between items-center max-w-5xl">
+            <a
+              href="#home"
+              className="text-xl font-extrabold text-cyan-400 transition-colors duration-300"
+            >
+              YASH
+            </a>
+            <div className="hidden md:flex space-x-6">
               {navLinks.map((link, index) => (
-                <a 
-                  key={index} 
-                  href={link.href} 
-                  onClick={() => setIsMenuOpen(false)}
-                  className="text-white hover:text-cyan-400 font-medium text-lg transition-colors duration-300 w-full text-center"
+                <a
+                  key={index}
+                  href={link.href}
+                  className="text-gray-300 hover:text-cyan-400 font-medium transition-colors duration-300"
                 >
                   {link.name}
                 </a>
               ))}
             </div>
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden text-white focus:outline-none"
+              aria-label="Toggle navigation menu"
+            >
+              {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
+            </button>
           </div>
-        )}
-      </nav>
+          {/* Mobile Menu */}
+          {isMenuOpen && (
+            <div className="md:hidden bg-gray-800 border-t border-gray-700 py-4">
+              <div className="flex flex-col items-center space-y-4">
+                {navLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-white hover:text-cyan-400 font-medium text-lg transition-colors duration-300 w-full text-center"
+                  >
+                    {link.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </nav>
         {/* Main container with padding and max width */}
-        <div className="container mx-auto px-4 py-8 md:py-16 max-w-[1440px]">
+        <div className="container mx-auto px-4 py-8 md:px-14 md:py-16 max-w-[1440px]">
           {/* Hero Section */}
           <header className="flex flex-col md:flex-row items-center md:items-start justify-between mb-16 space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
@@ -215,7 +218,9 @@ function App() {
                       {edu.date}
                     </span>
                   </div>
-                  <h5 className="text-lg text-left text-white mt-1">{edu.school}</h5>
+                  <h5 className="text-lg text-left text-white mt-1">
+                    {edu.school}
+                  </h5>
                   <p className="text-gray-400 mt-2 text-left">
                     {edu.cgpa || edu.percentage}
                   </p>
@@ -253,8 +258,9 @@ function App() {
         </div>
 
         {/* Footer */}
-        <footer className="bg-gray-800 text-gray-400 py-8">
-          <div className="container mx-auto px-4 max-w-5xl flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        {/* Footer */}
+        <footer className="bg-gray-800 text-gray-400 max-w-full ">
+          <div className="w-full px-4 py-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-center md:text-left">
               &copy; {new Date().getFullYear()} {resumeData.name}. All Rights
               Reserved.
