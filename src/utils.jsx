@@ -55,12 +55,65 @@ export const resumeData = {
       "JavaScript",
       "GSAP",
       "Framer Motion",
+      "Flutter",
     ],
     Backend: ["Node.js", "Python", "Java", "C/C++", "Express", "Django"],
-    Databases: ["MySQL", "MongoDB"],
-    "Tools & Platforms": ["Git", "GitHub", "Jira", "Zeplin", "AWS", "DevOps","VS Code","Android Studio"],
+    Databases: ["MySQL", "MongoDB", "Firebase"],
+    "Tools & Platforms": [
+      "Git",
+      "GitHub",
+      "Jira",
+      "Zeplin",
+      "AWS",
+      "DevOps",
+      "VS Code",
+      "Android Studio",
+    ],
   },
   projects: [
+    {
+      title: "IdeaMagix (Lead Management System)",
+      date: "12/2025",
+      description:
+        "A professional Lead Management System designed for IdeaMagix, featuring a secure Super Admin dashboard for managing clients, leads, and staff assignments.",
+      github: "https://github.com/YashPimpalkar/ideamagix",
+      live: "https://yash-ideamagix.vercel.app/",
+      technologies: [
+        "Angular",
+        "Spring Boot",
+        "Java",
+        "MySQL",
+        "REST API",
+        "TypeScript",
+      ],
+    },
+    {
+      title: "Delivery Management System",
+      date: "10/2025",
+      description:
+        "A comprehensive solution for managing deliveries and tracking orders, with a focus on administrative control and user-friendly tracking.",
+      github: "https://github.com/YashPimpalkar/deliver-management",
+      live: "https://manage-delivery.vercel.app/",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    },
+    {
+      title: "Task Tracker",
+      date: "04/2025",
+      description:
+        "A functional Task Tracker app with CRUD operations, enabling users to organize their professional and personal tasks efficiently.",
+      github: "https://github.com/YashPimpalkar/task-tracker",
+      live: "https://task-tracker-yash.vercel.app",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    },
+    {
+      title: "GenAI Chatbot",
+      date: "10/2025",
+      description:
+        "A conversational AI chatbot that leverages the Groq API and Streamlit to provide fast, AI-driven responses to user queries.",
+      github: "https://github.com/YashPimpalkar/ChatBot-Steamlit",
+      live: "https://gen-ai-chatbot-yash.streamlit.app/",
+      technologies: ["Python", "Streamlit", "Groq API", "GenAI"],
+    },
     {
       title: "OBE: Outcome-Based Education (Industry Level Project)",
       date: "07/2024-02/2025",
