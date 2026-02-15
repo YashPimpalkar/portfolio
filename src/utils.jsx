@@ -18,8 +18,21 @@ export const resumeData = {
     linkedin: "https://www.linkedin.com/in/yashpimpalkar/",
     github: "github.com/YashPimpalkar",
     location: "Kurla West, Mumbai, India 400070",
+    // Using direct path relative to the base URL (/portfolio/) for GitHub Pages
+    resumeLink: "/portfolio/resume/SDE/Yash_Pimpalkar.pdf",
   },
   experience: [
+    {
+      company: "Aryaworld Infotech",
+      role: "Full Stack Developer", // Please update with correct role
+      date: "11/2025-present", // Please update with correct dates
+      location: "Mumbai, India", // Please update with correct location
+      description: [
+        "Enhanced scalable backend services and responsive frontend applications using Node.js, React.js, Next.js, MySQL, and REST APIs, improving system performance by 30%.",
+        "Integrated and optimized RESTful backend APIs with frontend applications, reducing response time by 25% and ensuring seamless data flow across modules.",
+        "Improved database query performance by 10%, streamlined API operations, utilized Git for version control, and ensured code quality through unit testing.",
+      ],
+    },
     {
       company: "Spinach Experience Design",
       role: "Intern - Frontend",

@@ -4,10 +4,124 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yash's Portfolio</title>
+    <title>Yash Pimpalkar | Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Yash Pimpalkar, a Full Stack Developer skilled in Next.js, React, Node.js, and Java. View my projects, skills, and experience."
+    />
+    <meta
+      name="keywords"
+      content="Yash Pimpalkar, Full Stack Developer, React Developer, Node.js, Web Development, Portfolio, Software Engineer"
+    />
+    <meta name="author" content="Yash Pimpalkar" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://yashpimpalkar.github.io/portfolio/"
+    />
+    <meta property="og:title" content="Yash Pimpalkar | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Yash Pimpalkar, a Full Stack Developer skilled in Next.js, React, Node.js, and Java."
+    />
+    <meta
+      property="og:image"
+      content="https://yashpimpalkar.github.io/portfolio/og-image.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://yashpimpalkar.github.io/portfolio/"
+    />
+    <meta
+      property="twitter:title"
+      content="Yash Pimpalkar | Full Stack Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Portfolio of Yash Pimpalkar, a Full Stack Developer skilled in Next.js, React, Node.js, and Java."
+    />
+    <meta
+      property="twitter:image"
+      content="https://yashpimpalkar.github.io/portfolio/og-image.png"
+    />
+    <style>
+      /* Preloader Styles */
+      .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #111827; /* gray-900 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+      }
+
+      .preloader.fade-out {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .logo-container {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo-img {
+        width: 60px;
+        height: 60px;
+        animation: pulse 2s infinite ease-in-out;
+        z-index: 2;
+      }
+
+      .spinner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 4px solid rgba(6, 182, 212, 0.1); /* cyan-500 equivalent with opacity */
+        border-top: 4px solid #06b6d4; /* cyan-500 */
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(0.95); opacity: 0.8; }
+        50% { transform: scale(1.05); opacity: 1; }
+        100% { transform: scale(0.95); opacity: 0.8; }
+      }
+      
+      /* Hide scrollbar during load if desired, but might cause layout shift. 
+         Keeping it simple for now. */
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Preloader HTML: Visible until React mounts -->
+      <div class="preloader">
+        <div class="logo-container">
+          <div class="spinner"></div>
+          <img src="/logo.png" alt="Logo" class="logo-img" />
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
